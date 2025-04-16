@@ -1,0 +1,67 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sales Prediction - Result</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #f0f3ff, #e0e7ff);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .result-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 400px;
+    }
+
+    h2 {
+      color: #4f46e5;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      color: #111827;
+      margin: 10px 0;
+    }
+
+    .sales-amount {
+      font-size: 32px;
+      color: #1f2937;
+      font-weight: bold;
+      margin: 25px 0;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      background: #4f46e5;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    a:hover {
+      background: #3b3fc1;
+    }
+  </style>
+</head>
+<body>
+  <div class="result-box">
+    <h2>Predicted Sales</h2>
+    <p class="sales-amount">₹ {{ prediction }}</p>
+    <a href="/">🔙 Predict Again</a>
+  </div>
+</body>
+</html>
